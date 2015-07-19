@@ -14,7 +14,7 @@
 	<button ng-click ="addFriend()">Add Friend</button>
 
 	<h1>My Friends</h1>
-	<div ng-repeat="friend in friends">
+	<div ng-repeat="friend in friends track by $index">
 		<p> {{friend}}</p>
 	</div>
 
